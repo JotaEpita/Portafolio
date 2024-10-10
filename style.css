@@ -37,11 +37,16 @@ img {
     justify-content: space-between;
 }
 
-logo {
+.logo {
     color: #49bada;
     font-size: 25px;    
     font-weight: 800;
     text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
 }
 
 .menu .navbar ul li a {
@@ -62,8 +67,6 @@ logo {
 
 .menu-icono {
     width: 25px;
-    cursor: pointer;
-    display: none;
 }
 
 .menu label {
@@ -116,41 +119,41 @@ logo {
 }
 
 .about {
-    padding: 0 100px 0;
+    padding: 0 0 100px 0;
     display: flex;
     align-items: center;
-  }
+}
   
   .about-img {
     flex-basis: 40%;
-  }
+}
   
   .about-img img {
     width: 350px;
     border-radius: 15px;
     border: 10px solid #49BADA;
-  }
+}
   
   .about-txt {
     flex-basis: 60%;
-  }
+}
   
   h2 {
     font-size: 40px;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-  }
+}
 
   .about-txt p {
     color: #B3B3B3;
     font-size: 17px;
     margin-bottom: 50px;
-  }
+}
   
   .buttons a {
     margin-right: 15px;
-  }
+}
 
   .portafolio {
     padding: 50px 0;
@@ -202,6 +205,7 @@ logo {
   .skills {
     padding: 50px 0 100px 0;
     text-align: center;
+   
   }
   
   .skills-content {
@@ -243,47 +247,119 @@ logo {
     margin-bottom: 10px;
   }
 
-  @media (max-width: 991px) {
+  /* Estilos que se aplican a dispositivos móviles y pantallas pequeñas (menores o iguales a 991px) */
+@media (max-width: 991px) {
     .menu {
-      padding: 20px;
+        padding: 20px;
     }
-  
-    .menu label {
-      display: initial;
-    }
-  
-    .menu .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: #49BADA;
-      display: none;
-    }
-  
-    .menu .navbar ul li a:hover {
-      color: #101630;
-    }
-  
-    .menu .navbar ul li {
-      width: 100%;
-    }
-  }
 
-  #menu:checked ~ .navbar {
-    display: initial;
-  }
-  
-  .header {
-    min-height: 0vh;
-    padding: 100px 30px 30px 30px;
-  }
-  
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .header-txt h1 {
-    font-size: 70px;
-  }
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #49BADA;
+        display: none;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #101630;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+        padding: 100px 30px 30px 30px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 70px;
+    }
+
+    .about {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .buttons a {
+        margin: 0 0 10px 0;
+    }
+
+    .portafolio {
+        padding: 30px;
+    }
+
+    .portafolio-content {
+        margin-top: 30px;
+    }
+
+    .portafolio-1 {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .portafolio-txt {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portafolio-img {
+        order: 2;
+        width: 250px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Estilos para pantallas grandes (mayores a 991px) */
+@media (min-width: 992px) {
+    .menu .navbar {
+        display: flex; /* Asegúrate de que el menú en pantallas grandes sea visible */
+        position: relative;
+        background-color: transparent;
+    }
+
+    .header {
+        min-height: 50vh;
+        padding: 150px 50px;
+    }
+
+    .header-txt h1 {
+        font-size: 100px;
+    }
+
+    /* Otros estilos para pantallas grandes */
+}
