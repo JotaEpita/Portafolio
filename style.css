@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #101630;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1200%;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+logo {
+    color: #49bada;
+    font-size: 25px;    
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #49bada;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
+}
+
+.header-content {
+    display: flex;
+    flex: 1;
+}
+
+.header-txt {
+    flex-basis: 50%;
+}
+
+.header-txt span {
+    font-size: 30px;
+    font-weight: 600;
+    color: #868b9e;
+}
+
+.header-txt h1 {
+    font-size: 100px;
+    color: #ffffff;
+    line-height: 1;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 10px 0 25px 0;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(
+        90deg,
+         rgba(78,159,215,1)0%,
+         rgba(74,42,193,1)100%
+    );
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px ;
+}
+
+.about {
+    padding: 0 100px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-img {
+    flex-basis: 40%;
+  }
+  
+  .about-img img {
+    width: 350px;
+    border-radius: 15px;
+    border: 10px solid #49BADA;
+  }
+  
+  .about-txt {
+    flex-basis: 60%;
+  }
+  
+  h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
+
+  .about-txt p {
+    color: #B3B3B3;
+    font-size: 17px;
+    margin-bottom: 50px;
+  }
+  
+  .buttons a {
+    margin-right: 15px;
+  }
+
+  .portafolio {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .portafolio-content {
+    margin-top: 70px;
+  }
+  
+  .portafolio-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .portafolio-txt {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  .portafolio-txt span {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #49BADA;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .portafolio-txt h3 {
+    color: #FFFFFF;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+  }
+  
+  .portafolio-txt p {
+    font-size: 17px;
+    color: #C5C5C5;
+    margin-bottom: 25px;
+  }
+  
+  .portafolio-img {
+    flex-basis: 50%;
+  }
+
+  .skills {
+    padding: 50px 0 100px 0;
+    text-align: center;
+  }
+  
+  .skills-content {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    justify-content: center;
+  }
+  
+  .skills-content img {
+    width: 70px;
+  }
+
+  .footer {
+    padding: 50px 0;
+    background: linear-gradient(
+      90deg,
+      rgba(74, 42, 193, 1) 0%,
+      rgba(78, 159, 215, 1) 100%
+    );
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .link h3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .link a {
+    color: #C5C5C5;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 10px;
+  }
