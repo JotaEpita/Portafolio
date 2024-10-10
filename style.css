@@ -242,3 +242,48 @@ logo {
     display: block;
     margin-bottom: 10px;
   }
+
+  @media (max-width: 991px) {
+    .menu {
+      padding: 20px;
+    }
+  
+    .menu label {
+      display: initial;
+    }
+  
+    .menu .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #49BADA;
+      display: none;
+    }
+  
+    .menu .navbar ul li a:hover {
+      color: #101630;
+    }
+  
+    .menu .navbar ul li {
+      width: 100%;
+    }
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+  
+  .header {
+    min-height: 0vh;
+    padding: 100px 30px 30px 30px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .header-txt h1 {
+    font-size: 70px;
+  }
